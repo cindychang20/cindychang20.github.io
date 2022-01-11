@@ -1,102 +1,174 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<style> 
-		.a_big {font-size: 200%;}
-		.a_big:hover{;
-			  color: red;}
-	    h1 {color: #3158F7;
-	        font-size: 80px;
-	        text-shadow: 0px 3px 5px #3158F7;
-	        text-align: center;}
-	     .a {font-size: 20px;
-	         border: 5px darkred;
-	         border-style: double;
-	              text-align: left;}  
-	     .country {border: 10px #ffc3cf;
-	     	     border-style: solid;
-	              text-align: center;}          
-          .festivals {font-family: "Times New Roman", Times, serif;
-                      font-size: 60px;
-                      text-align: center;
-                      color: #ffc356;
-                      text-shadow: 1px 5px 15px #ffc356;}	
-          .b {font-size: 30PX;} 
-          .c {font-size: 30px;
-              color: red;} 
-          .e {font-size: 20px;
-              text-align: right;}   	          
-	
-</style>	
-	
-	<title>Click here!</title>
-</head>
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.column_1, .column_2, .column_3 {   
+  float: left;
+  width: 33%;
+}
+.column_1, .column_2 {   
+  margin-right: 0.5%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
 <body>
-<h1 id="country"><i>Special festivals around the world</i></h1>
-<p class="b">There are festivals with different themes all over the world, and some of them are world-famous, jubilant all over the country, attracting tourists from all over the world to come and celebrate. Now I will introduce some interesting celebrations for each month. Whether you are a local or not, you can blend with them and break cultural barriers!</p>
-<br>
-<div class="country">
-<a class="a_big" href="#Shetland">Shetland</a>&nbsp
-<a class="a_big" href="#Thailand">Thailand</a>&nbsp
-<a class="a_big" href="#Belgium">Belgium</a>&nbsp
-<a class="a_big" href="#Taiwan">Taiwan</a>&nbsp
-<a class="a_big" href="#Germany">Germany</a>&nbsp
-<a class="a_big" href="#Mexico">Mexico</a>&nbsp
-<a class="a_big" href="#India">India</a>&nbsp
+
+<div class="header">
+  <h1>HYGGE BISTRO</h1>
+  <p>不是只有舒適的意思，一種慢活的概念</p>
 </div>
-<br><br><br><br><br>
-<div class="festivals">
-<p id="Shetland"><b>Up Helly Aa Fire Festival in Shetland</b></p></div>
-<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/11647/production/_105393217_7f2e33d2-e7cc-43ec-b283-52c18741e58e.jpg"
-     width="400"
-     align="center">
-<p class="a">For 24 hours on the last Tuesday of January Lerwick is the location of Shetland's biggest annual fire festival.Up Helly Aa is a type of fire festival held annually from January to March in various communities in Shetland, Scotland to mark the end of the Yule season. Each festival involves a torchlit procession by squads of costumed participants (known as guizers) that culminates in the burning of an imitation Viking galley. The largest festival held in Lerwick, Shetland's capital, involves a procession of up to a thousand guizers who march through the streets of Lerwick on the last Tuesday in January. The other rural festivals (known as the 'country' Up Helly Aas) see lower numbers of participants in accordance with their lower populations. 
-<p class="e"><a href="#country">BACK</a></p></p>
-<div class="festivals">
-<p id="Thailand"><b>Songkran Festival in Thailand</b></p></div>
-<img src="https://thepattayanews.com/wp-content/uploads/2021/04/dFQROr7oWzulq5FZUEsOAOr4kbjtXCn6LOSfOeGf2xLtyvlRSgCmcOM7ewZA8T4OIBW.jpg"
-     width="400">
-<img src="./images/2.jpg"
-     width="200">
-<p class="a">Songkran is Thailand's most famous festival. An important event on the Buddhist calendar, this water festival marks the beginning of the traditional Thai New Year. The name Songkran comes from a Sanskrit word meaning 'passing' or 'approaching'. Songkran is on 13 April every year, but the holiday period extends from 14 to 15 April.<br>
-Water is an important element of Songkran, especially in more recent times when the throwing of water has become a huge part of the annual celebrations. If you're visiting Thailand during this period, prepare to get splashed!   
-<p class="e"><a href="#country">BACK</a></p></p>
-<div class="festivals">
-<p id="Belgium"><b>Tomorrowland in Belgium</b></p></div>
-<img src="https://edmhousenetwork.com/wp-content/uploads/2020/01/ztomorrowland-tml.jpg"
-     width="400">
-<p class="a">For 24 hours on the last Tuesday of January Lerwick is the location of Shetland's biggest annual fire festival.<br>
-Once upon a time, Tomorrowland was just a music festival. It's hard to imagine it now, but early editions didn't have the all-encompassing themes and engrossing mythology that help to shape the whole experience.
-Nowadays though, the annual theme is a huge part of the magic, dictating the incredible MainStage design, the immersive production and more or less everything that isn't the lineup of dance music megastars.
-The globally adored festival celebrated its 15th Anniversary in 2019, and with the new season fast approaching we've decided to look back over all the themes since the festival's inception.<br>
-<a href="https://www.tomorrowland.com/en/festival/welcome"> MORE Information HERE!!!</a>
-<p class="e"><a href="#country">BACK</a></p></p>
-<div class="festivals">
-<p id="Taiwan"><b>Mid-autumn festival in Taiwan</b></p></div>
-<img src="https://img.ltn.com.tw/Upload/news/600/2019/09/13/phpYGWBGA.jpg"
-     width="400">   
-<p class="a">The Mid-Autumn Festival, also known as the Moon Festival, is a holiday for families to get together and enjoy each other's company.Held on the 15th day of the eighth month of the lunar calendar, the Moon Festival will fall on a Tuesday (Sept. 21) this year. On this day, people in Taiwan eat moon cakes, which symbolize unity and togetherness; stroll under the full moon; grill food on the barbecue; and eat pomelos, since the Chinese term for pomelo sounds like "care and protection."The most familiar myth related to the festival is that of Chang-e flying to the moon after secretly drinking her husband's elixir of life. Aside from this, there are also tales of the Jade Rabbit and of Wu Gang chopping down the cassia tree.     
-<p class="e"><a href="#country">BACK</a></p></p>
-<div class="festivals">
-<p id="Germany"><b>Oktoberfest (Beer festival) in Germany</b></p></div>
-<img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iPw5zkyAZ3Gw/v1/1200x900.jpg"
-     width="400">
-<img src="./images/3.JPG"
-     width="300">     
-<p class="a">Oktoberfest, annual festival in Munich, Germany, held over a two-week period and ending on the first Sunday in October. The festival originated on October 12, 1810, in celebration of the marriage of the crown prince of Bavaria, who later became King Louis I, to Princess Therese von Sachsen-Hildburghausen. The festival concluded five days later with a horse race held in an open area that came to be called Theresienwiese ("Therese's green"). 
-<p class="e"><a href="#country">BACK</a></p></p>  
-<div class="festivals">
-<p id="Mexico"><b>Dia de los Muertos (Day of the dead) in Mexico</b></p></div>
-<img src="https://static1.abc.es/media/viajar/2019/10/29/dia-muertos-kCzH--1200x630@abc.jpg"
-     width="400">
-<p class="a">The Day of the Dead is a holiday traditionally celebrated on November 1 and 2, though other days, such as October 31 or November 6, may be included depending on the locality.The multi-day holiday involves family and friends gathering to pay respects and to remember friends and family members who have died. These celebrations can take a humorous tone, as celebrants remember funny events and anecdotes about the departed. In 2008, the tradition was inscribed in the Representative List of the Intangible Cultural Heritage of Humanity by UNESCO.       
-<p class="e"><a href="#country">BACK</a></p></p>
-<div class="festivals">
-<p id="India"><b>Holi Festival in India</b></p></div>
- <img src="https://www.masala.com/cloud/2021/07/26/jyUjDqnK-shutterstock_684470623_10530224.jpg-1200x612.jpg"
-     width="400">
-<p class="a">Holi is a popular ancient Indian festival, also known as the "Festival of Love", the "Festival of Colours" and the "Festival of Spring".It originated and is predominantly celebrated in India and Nepal but has also spread to other regions of Asia and parts of the Western world through the diaspora from the Indian subcontinent.Holi celebrates the arrival of spring, the end of winter, the blossoming of love and for many, it is a festive day to meet others, play and laugh, forget and forgive, and repair broken relationships. The festival also celebrates the beginning of a good spring harvest season. 
-<p class="e"><a href="#country">BACK</a></p></p> 
-<div class="c"><p>REFERENCE:<a href="https://www.wikipedia.org">WIKIPEDIA</a></p></div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Home</a>
+</div>
+
+<div class="row">
+  <div class="column_1">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="column_2">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="column_3">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
 </body>
 </html>
